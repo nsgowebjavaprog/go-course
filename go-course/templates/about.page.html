@@ -1,0 +1,15 @@
+{{template "base" .}}
+
+{{define "content"}}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>This is About Page</h1>
+            <h4>About</h4>
+            <p>Ths came from template: {{index. StringMap "test"}}</p>
+        </div>
+    </div>
+</div>
+{{end}}
+
+//go run ./cmd/web
